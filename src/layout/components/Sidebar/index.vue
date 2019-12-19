@@ -1,7 +1,12 @@
 <template>
   <div :class="{'has-logo':showLogo}">
  
-   
+    <!--设置头像-->
+   <div class="logo-wrap">
+     <div>
+       <i class="el-icon-s-custom user-size">在代码中搜索我就能找到了</i>
+     </div>
+   </div>
     <logo v-if="showLogo" :collapse="isCollapse" />
     <el-scrollbar wrap-class="scrollbar-wrapper">
       
@@ -58,3 +63,18 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+ 
+.logo-wrap{
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  
+}
+.user-size{
+    font-size: 20px;
+    color: aliceblue;
+  }
+</style>
